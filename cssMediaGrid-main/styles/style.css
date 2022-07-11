@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1b143f;
+}
+
+header{
+    height: 100px;
+
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer{
+    height: 250px;
+    background-color: #271d4c;
+    color: white;
+    line-height: 250px;
+    text-align: center;
+}
+
+
+/* Ecris en dessous */
+header div{
+    display: flex;
+}
+header div img{
+    height: 100px;
+}
+
+.blue{
+    background-color: blue;
+    height: 50px;
+    width: 25px;
+}
+.white{
+    background-color: white;
+    height: 50px;
+    width: 25px;
+
+}
+.red{
+    background-color: red;
+    height: 50px;
+    width: 25px;
+}
+
+h1{
+    background-color: #271d4c;
+    color: white;
+    text-shadow: 1px 1px  3px ;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#fusee{
+    display: block;
+    margin: 0px auto;
+    transition: all .5s ease-in-out;
+}
+#fusee:hover{
+    transform: rotate(360deg);
+}
+#grid{
+    display: grid ;
+    justify-content: center;
+    
+}
+#grid .un {
+    grid-row: 3;
+    grid-column: 3;
+}
+#grid .deux {
+    
+    
+    grid-row: 2;
+    grid-column: 2;
+    
+}
+#grid .trois {
+    grid-row: 2;
+    grid-column: 4;
+}
+#grid .quatre {
+    
+    
+    grid-row: 1;
+    
+}
+#grid .cinq {
+    grid-row: 1;
+    grid-column: 3;
+    
+}
+#grid .six {
+    grid-row: 1;
+    grid-column: 5;
+}
+section p{
+    width: 200px;
+    height: 100px;
+    background-color: #271d4c;
+    border: 3px solid red;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    padding: 5px;
+    
+}
+footer a img{
+    height: 80px;
+}
+@media  screen and (max-width: 1241px){
+    .logo2{
+        visibility: hidden;
+    }
+    .logo3{
+        visibility: hidden;
+    }
+}
+
+@media  screen and (max-width: 741px) {
+    h1{
+       visibility:hidden ;
+    }
+    
+    h1::before {
+        content: 'C Yann';
+        visibility: visible;
+        word-spacing: 1rem;
+        
+    }
+    .logo2{
+        visibility: visible;
+        
+    }
+    .logo1{
+        visibility: hidden;
+    }
+    .logo3{
+        visibility: hidden;
+    }
+
+}
+@media screen and (max-width: 390px){
+    h1{
+        visibility: hidden;
+    }
+    h1::before{
+        content:'C Y' ;
+        visibility: visible;
+        
+    }
+    .logo3{
+        visibility: visible;
+        position: absolute;
+        right: 240px;
+    }
+    .logo2{
+        visibility: hidden;
+    }
+    
+}
+@media screen and (max-width: 390px){
+    #grid{
+        visibility: hidden;
+    }
+    #grid :nth-child(1){
+        visibility: visible;
+    }
+}
